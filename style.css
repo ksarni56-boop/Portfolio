@@ -1,0 +1,184 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  width: 100%;
+  background: #0d1b2a;
+  padding: 15px 50px;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00b4d8;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00b4d8;
+}
+
+/* Sections */
+.section {
+  min-height: 100vh;
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Home */
+.home {
+  background: linear-gradient(135deg, #000, #001f3f);
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.home span {
+  color: #00b4d8;
+}
+
+.home p {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: #00b4d8;
+  color: #000;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0077b6;
+  color: #fff;
+}
+
+/* About */
+.about {
+  background: #001f3f;
+  text-align: center;
+}
+
+.about-container {
+  margin-top: 20px;
+}
+
+#profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #00b4d8;
+  margin: 15px 0;
+  object-fit: cover;
+}
+
+/* Projects */
+.projects {
+  background: #000814;
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  background: #001f3f;
+  padding: 30px;
+  width: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  background: #003566;
+}
+
+/* Contact */
+.contact {
+  background: #001f3f;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background: #00b4d8;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #0077b6;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
